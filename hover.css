@@ -1,0 +1,26 @@
+/* 1. CSS for the Box (Change Color) */
+    .hover-box {
+        background-color: #f0f0f0;  /* Light gray default */
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s;       /* Smooth animation */
+        width: 200px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+    .hover-box:hover {
+        background-color: #28a745;  /* Changes to Green on hover */
+        color: white;               /* Text changes to White on hover */
+    }
+
+    /* 2. CSS for the Text (Change Font Size) */
+    .grow-text {
+        font-size: 16px;            /* Default size */
+        transition: font-size 0.3s; /* Smooth animation */
+        cursor: default;
+    }
+
+    .grow-text:hover {
+        font-size: 24px;            /* Grows bigger on hover */
+    }

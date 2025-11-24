@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM & CSS Practice Problems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="same_button.css">
+    <script src="add_row.js"></script>
+    <script src="create_list.js"></script>
+    <script src="create_multiple_cards_using_loop.js"></script>
+    <script src="decrease_number.js"></script>
+    <script src="hide_section.js"></script>
+    <script src="convert_uppercase.js"></script>
+    <link rel="stylesheet" href="change_background.css">
+      <link rel="stylesheet" href="hover.css">
+
+</head>
+<body>
+
+    <h1>JS & CSS Practice Playground</h1>
+
+    <section>
+        <h3>1. Add a new row to a table</h3>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="text" id="roleInput" placeholder="Role">
+        <button onclick="addRow()">Add Row</button>
+        
+        <table id="staffTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Manager</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>2 & 3. Add List Item & Apply Class</h3>
+        <input type="text" id="listInput" placeholder="New Item">
+        <button onclick="addListItem()">Add to List</button>
+        <ul id="dynamicList">
+            <li class="my-list-item">Existing Item 1</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>4. Generate Cards via Loop</h3>
+        <button onclick="generateCards()">Generate Cards</button>
+        <div id="cardContainer" class="card-container"></div>
+    </section>
+
+    <section>
+        <h3>6. Click to Decrease Number</h3>
+        <p>Current Count: <span id="counterValue" style="font-weight:bold; font-size: 20px;">10</span></p>
+        <button onclick="decreaseCount()">Decrease (-)</button>
+    </section>
+
+    <section id="hideSection">
+        <h3>7. Hide this section</h3>
+        <p>This paragraph will vanish when you click the button below.</p>
+        <button onclick="hideMe()">Hide Me</button>
+    </section>
+
+    <section>
+        <h3>8. Uppercase on Keypress</h3>
+        <p>Type below (converts automatically):</p>
+        <input type="text" id="upperInput" placeholder="Type here..." oninput="convertToUpper()">
+    </section>
+
+    <section>
+        <h3>9 & 10. Hover Effects (Color & Font Size)</h3>
+        <div class="hover-box">
+            Hover me to change Color!
+        </div>
+        <br>
+        <p class="grow-text">Hover over this text to toggle font size!</p>
+    </section>
+   
+    <input type="text" placeholder="Enter text">
+<input type="email" placeholder="Enter email">
+</body>

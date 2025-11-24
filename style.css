@@ -1,0 +1,104 @@
+   
+        /* --- CSS REQUIREMENTS --- */
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 { margin-top: 0; }
+
+        /* Req: Make all the buttons look the same */
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Req: Change background color of form fields upon focus */
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        input:focus {
+            background-color: #e8f0fe; /* Light blue focus color */
+            outline: none;
+            border-color: #007BFF;
+        }
+
+        /* Req: Change text/bg color by hovering */
+        .hover-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s;
+            width: 200px;
+            border: 1px solid #ccc;
+        }
+
+        .hover-box:hover {
+            background-color: #28a745; /* Green bg */
+            color: white; /* White text */
+        }
+
+        /* Req: Toggle font-sizes by hovering */
+        .grow-text {
+            font-size: 16px;
+            transition: font-size 0.3s;
+            cursor: default;
+        }
+
+        .grow-text:hover {
+            font-size: 24px;
+        }
+
+        /* Styles for Cards (Req: Loop creation) */
+        .card-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* This class is applied via JS loop */
+        .product-card {
+            border: 1px solid #333;
+            padding: 15px;
+            width: 150px;
+            background-color: #fff;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+
+        /* Styling for the list */
+        .my-list-item {
+            background-color: #fff3cd;
+            margin-bottom: 5px;
+            padding: 5px;
+            list-style-type: square;
+        }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
